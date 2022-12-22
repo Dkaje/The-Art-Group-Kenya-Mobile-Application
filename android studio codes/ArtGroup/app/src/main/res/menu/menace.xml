@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/noti"
+        android:title="NEW" />
+    <item
+        android:id="@+id/Ord"
+        android:title="PAYMENT" />
+    <item
+        android:id="@+id/chat"
+        android:title="DELIVERY" />
+    <item
+        android:id="@+id/Imag"
+        android:title="IMAGES" />
+</menu>

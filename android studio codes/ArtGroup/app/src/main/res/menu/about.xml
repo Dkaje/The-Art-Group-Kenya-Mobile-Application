@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/help"
+        android:title="HELP" />
+    <item
+        android:id="@+id/sup"
+        android:icon="@drawable/supp"
+        android:title="SUPPLIER" />
+    <item
+        android:id="@+id/drive"
+        android:icon="@drawable/driver"
+        android:title="DRIVER" />
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/video"
+        android:title="VIDEOGRAPHER" />
+</menu>

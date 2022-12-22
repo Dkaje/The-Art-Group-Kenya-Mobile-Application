@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5sp"
+    android:background="#fff"
+    tools:context=".Uriah.Cart">
+
+    <include
+        android:id="@+id/custoo"
+        layout="@layout/cust_bar" />
+
+    <android.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custoo"
+        android:layout_toStartOf="@+id/myPay"
+        android:background="#fff"
+        app:queryHint="Search.." />
+
+    <Button
+        android:id="@+id/myPay"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/custoo"
+        android:layout_alignParentEnd="true"
+        android:background="#157704"
+        android:text="Payment"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeBoss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search">
+
+        <ListView
+            android:id="@+id/availableGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,1 @@
+<div align="right"> <footer class="footer"> © The ArtGroup LTD 2022. </footer></div>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1.5sp">
+
+    <RelativeLayout
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="1.5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/sendF"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/doubled"
+            android:gravity="center"
+            android:text="r"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:id="@+id/sendDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1sp"
+            android:text="12"
+            android:textColor="@color/purple_500"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/sendName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sendDate"
+            android:layout_marginStart="5sp"
+            android:layout_toEndOf="@+id/sendF"
+            android:text="yoo"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sendMess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sendName"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/sendF"
+            android:text="yoo"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="1.5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/recF"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/mbogo"
+            android:gravity="center"
+            android:text="r"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:id="@+id/recDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1sp"
+            android:text="12"
+            android:textColor="#049128"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/recName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recDate"
+            android:layout_marginStart="5sp"
+            android:layout_toEndOf="@+id/recF"
+            android:text="yoo"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recMess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recName"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/recF"
+            android:text="yoo"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</RelativeLayout>

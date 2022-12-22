@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fina"
+        android:icon="@drawable/finance"
+        android:title="FINANCE" />
+    <item
+        android:id="@+id/inven"
+        android:icon="@drawable/store"
+        android:title="INVENTORY" />
+</menu>

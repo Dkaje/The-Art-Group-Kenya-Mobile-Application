@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="HOME" />
+    <item
+        android:id="@+id/cart"
+        android:title="BIDs" />
+    <item
+        android:id="@+id/noti"
+        android:title="SUPPLY" />
+    <item
+        android:id="@+id/chat"
+        android:title="REQUEST" />
+</menu>

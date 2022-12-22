@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cust"
+        android:icon="@drawable/customer"
+        android:title="Customer" />
+    <item
+        android:id="@+id/drive"
+        android:icon="@drawable/driver"
+        android:title="Driver" />
+    <item
+        android:id="@+id/employee"
+        android:icon="@drawable/staff"
+        android:title="Employees" />
+</menu>

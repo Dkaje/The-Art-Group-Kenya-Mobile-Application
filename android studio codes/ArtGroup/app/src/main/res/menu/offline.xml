@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/noti"
+        android:title="PRODUCTS" />
+    <item
+        android:id="@+id/Ord"
+        android:title="RAW_MATERIALS" />
+</menu>

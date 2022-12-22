@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ready"
+        android:title="READY" />
+    <item
+        android:id="@+id/noti"
+        android:title="CUSTOM" />
+    <item
+        android:id="@+id/credit"
+        android:title="SUPPLY" />
+    <item
+        android:id="@+id/hire"
+        android:title="HIRE" />
+    <item
+        android:id="@+id/chat"
+        android:title="BANK" />
+</menu>

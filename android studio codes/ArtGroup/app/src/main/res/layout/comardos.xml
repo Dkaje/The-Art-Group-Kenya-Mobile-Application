@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relledColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtUka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="DesiredColor:"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/velvet"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_toEndOf="@+id/txtUka"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rellledImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relledColor"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/kany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="DesiredImage:"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_toEndOf="@+id/kany" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

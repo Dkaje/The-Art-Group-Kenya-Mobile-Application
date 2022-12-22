@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    android:background="#fff"
+    tools:context=".midfield.DesignReg">
+
+    <ImageView
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7sp"
+        android:text="Register"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="20sp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtFname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:hint="  Your firstname"
+                    android:maxLength="20" />
+
+                <EditText
+                    android:id="@+id/edtLname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtFname"
+                    android:layout_marginTop="10sp"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:hint="  Your lastname"
+                    android:maxLength="20" />
+
+                <EditText
+                    android:id="@+id/edtMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtLname"
+                    android:layout_marginTop="10sp"
+                    android:hint="  Your Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50" />
+
+                <EditText
+                    android:id="@+id/edtMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtMail"
+                    android:layout_marginTop="10sp"
+                    android:hint="  Your phone"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <Spinner
+                    android:id="@+id/spinCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtMobile"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edtUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinCount"
+                    android:drawableStart="@drawable/usernm"
+                    android:hint="  Your username"
+                    android:maxLength="20" />
+
+                <EditText
+                    android:id="@+id/edtPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtUser"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_toStartOf="@+id/viewPa"
+                    android:drawableStart="@drawable/lock"
+                    android:hint="  Password"
+                    android:inputType="textPassword"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/viewPa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtUser"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15sp"
+                    android:src="@drawable/visible" />
+
+                <EditText
+                    android:id="@+id/edtconfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtPass"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_toStartOf="@+id/viewConfirm"
+                    android:drawableStart="@drawable/lock"
+                    android:hint="  Please enter password again"
+                    android:inputType="textPassword"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/viewConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtPass"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15sp"
+                    android:src="@drawable/visible" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/edtconfirm"
+                    android:layout_marginTop="20sp"
+                    app:cardCornerRadius="30sp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2sp"
+                            app:cardCornerRadius="30sp">
+
+                            <Button
+                                android:id="@+id/btnLog"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:text="Register"
+                                android:textAllCaps="false"
+                                android:textColor="@color/justice"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

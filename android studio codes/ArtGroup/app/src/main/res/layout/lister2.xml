@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.widget.SearchView
+        android:id="@+id/sekoo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#fff"
+        app:queryHint="Search.." />
+
+    <RelativeLayout
+        android:id="@+id/relativeBoss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sekoo">
+
+        <ListView
+            android:id="@+id/revesred"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+    </RelativeLayout>
+</RelativeLayout>

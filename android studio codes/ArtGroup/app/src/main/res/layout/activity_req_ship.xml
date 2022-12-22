@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5sp"
+    tools:context=".service.ReqShip">
+
+    <include
+        android:id="@+id/server"
+        layout="@layout/serv_bar" />
+
+    <Button
+        android:id="@+id/btnPast"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/server"
+        android:layout_alignParentEnd="true"
+        android:text="Past" />
+
+    <android.widget.SearchView
+        android:id="@+id/searchHere"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/server"
+        android:layout_toStartOf="@+id/btnPast"
+        android:layout_toEndOf="@+id/addNEw" />
+
+    <Button
+        android:id="@+id/addNEw"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/server"
+        android:layout_alignParentStart="true"
+        android:background="@null"
+        android:text="Pdf"
+        android:textAllCaps="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchHere">
+
+        <TextView
+            android:id="@+id/myTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" />
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myTxt">
+
+            <TableRow android:padding="5dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CUSTOMER"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PHONE"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LOCATION"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/table" />
+    </RelativeLayout>
+</RelativeLayout>

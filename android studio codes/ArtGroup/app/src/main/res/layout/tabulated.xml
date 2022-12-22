@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow android:padding="5dp">
+
+        <TextView
+            android:id="@+id/custName"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CUSTOMER" />
+
+        <TextView
+            android:id="@+id/custID"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ID_NO" />
+
+        <TextView
+            android:id="@+id/custStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SHIPMENT" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".midfield.Help">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/topper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/serlector"
+        app:itemTextAppearance="@style/MenuItems"
+        app:itemTextColor="@drawable/serlector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/topper"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:clipToPadding="false"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:foregroundGravity="center"
+                        android:padding="15sp"
+                        android:text="@string/Help"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+   <!-- <RelativeLayout
+        android:id="@+id/users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/Finance"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/Inventory"
+            android:background="@color/white"
+            android:text="Finance"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Inventory"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            android:text="Inventory"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Designer"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Finance"
+            android:layout_toStartOf="@+id/Inventory"
+            android:background="@color/white"
+            android:text="Designer"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Video"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Finance"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            android:text="Videographer"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+    </RelativeLayout>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom"
+        style="@style/Theme.MaterialComponents.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/serlector"
+        app:itemTextAppearance="@style/MenuItems"
+        app:itemTextColor="@drawable/serlector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/about" />
+
+</RelativeLayout>
